@@ -534,6 +534,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -574,8 +586,44 @@ video {
   height: 100%;
 }
 
+.h-36 {
+  height: 9rem;
+}
+
+.h-\[125\%\] {
+  height: 125%;
+}
+
+.h-\[150\%\] {
+  height: 150%;
+}
+
+.h-\[300\%\] {
+  height: 300%;
+}
+
 .w-1\/2 {
-  width: 70%;
+  width: 50%;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-\[125\%\] {
+  width: 125%;
+}
+
+.w-\[150\%\] {
+  width: 150%;
+}
+
+.w-\[300\%\] {
+  width: 300%;
 }
 
 .justify-center {
@@ -682,6 +730,15 @@ video {
   --tw-gradient-to: #e5e7eb var(--tw-gradient-to-position);
 }
 
+.to-rose-100 {
+  --tw-gradient-to: #ffe4e6 var(--tw-gradient-to-position);
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -702,6 +759,11 @@ video {
   padding-bottom: 3rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -710,15 +772,6 @@ video {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-.text-riddle {
-    font-size: 10rem;
-    line-height: 10.5rem;
-}
-
-.text-insert {
-  font-size: 7rem;
-  line-height: .5rem;
-}
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;

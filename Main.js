@@ -1,24 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-  /*
+
   let prompts = ["Beyond the stone, how much purple do you see?", //1
   "We cover a wide range of crimes. What's the biggest?", //2
   //3 Dead shayne
-  "Striking metal, behind is back. What weapon or tool? (keep it lowercase)"]; //4
-  //1  2   4
-  let answers = ["5", "20", "sword"];
-  let progression = 0 //Will increment as events progress
-  */
-
-  let prompts = [
-  "Which group deserves the top grade with the best project?", //2
-  //3 Dead shayne
-  "Which group has the best website?",
-   "Who is Nitsche's favorite student?", 
-    "Who's 81st Birthday is it today?",
-    "Rileyyyyyyyyyyyyyyy!"
-    ]; //4
-  //1  2   4
-  let answers = ["This one", "This one", "Jonathan", "Riley"];
+  "Striking metal, behind is back. What weapon or tool? (keep first letter uppercase)", //4
+  "The plaque was very interesting! I like how it ended especially!", //5
+  "You did it! Now go defuse the bomb!" 
+  ]; 
+                //1     2       4     //5
+  let answers = ["5", "20", "Sword", "71"];
   let progression = 0 //Will increment as events progress
 
 

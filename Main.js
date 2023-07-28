@@ -9,9 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
   ]; 
                 //1     2       4     //5
   let answers = ["5", "20", "Sword", "71", "3262"];
-  let links = ["https://www.google.com/maps/d/u/0/edit?mid=1Sv99-NeYGy7ukTUb5Xjg9VCevtgymyo&usp=sharing",
-  "https://www.google.com/maps/d/u/0/edit?mid=1HfeYvTNngEMxyvgUVXwnkXEicbbxPrI&usp=sharing",
-  "https://www.google.com/maps/d/u/0/edit?mid=1lfF2yMjUAlPTbh4cWSZDNXIWeemll-g&usp=sharing",
+  let links = ["https://www.google.com/maps/d/u/0/edit?mid=1Sv99-NeYGy7ukTUb5Xjg9VCevtgymyo&usp=sharing", // 2
+  "https://www.google.com/maps/d/u/0/edit?mid=1HfeYvTNngEMxyvgUVXwnkXEicbbxPrI&usp=sharing", // 3
   "https://www.google.com/maps/d/u/0/edit?mid=1k-SP4Gwtn0R-1nfqyEtJRgyIygxzCoY&usp=sharing",
   "https://www.google.com/maps/d/u/0/edit?mid=1s3rG1hkxt9fxKyGGfhGQ3Tt9SlKWlnI&usp=sharing"
   ]

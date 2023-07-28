@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
   "Which group deserves the top grade with the best project?", //2
   //3 Dead shayne
   "Which group has the best website?",
-  "Congrats, you passed!", "Who is Nitsche's favorite student?"]; //4
+   "Who is Nitsche's favorite student?", 
+    "Happy Birthday Riley!"]; //4
   //1  2   4
   let answers = ["This one", "This one", "Jonathan"];
   let progression = 0 //Will increment as events progress

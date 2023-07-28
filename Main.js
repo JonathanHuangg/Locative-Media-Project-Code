@@ -5,10 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
   //3 Dead shayne
   "Striking metal, behind is back. What weapon or tool? (keep first letter uppercase)", //4
   "The plaque was very interesting! I like how it ended especially!", //5
-  "You did it! Now go defuse the bomb!" 
+  "The last post by the Paradox plotters. They seem to LIKE posting about their crimes." 
   ]; 
                 //1     2       4     //5
-  let answers = ["5", "20", "Sword", "71"];
+  let answers = ["5", "20", "Sword", "71", "3262"];
+  let links = ["https://www.google.com/maps/d/u/0/edit?mid=1Sv99-NeYGy7ukTUb5Xjg9VCevtgymyo&usp=sharing",
+  "https://www.google.com/maps/d/u/0/edit?mid=1HfeYvTNngEMxyvgUVXwnkXEicbbxPrI&usp=sharing",
+  "https://www.google.com/maps/d/u/0/edit?mid=1lfF2yMjUAlPTbh4cWSZDNXIWeemll-g&usp=sharing",
+  "https://www.google.com/maps/d/u/0/edit?mid=1k-SP4Gwtn0R-1nfqyEtJRgyIygxzCoY&usp=sharing",
+  "https://www.google.com/maps/d/u/0/edit?mid=1s3rG1hkxt9fxKyGGfhGQ3Tt9SlKWlnI&usp=sharing"
+  ]
   let progression = 0 //Will increment as events progress
 
 
@@ -20,16 +26,31 @@ document.addEventListener('DOMContentLoaded', () => {
   //Set up variables for changeImage
   const bombImg = document.getElementById("bomb");
 
+  //Set up variable for changeLink
+  const myLink = document.getElementById("myLink");
+
   //Changing question Upon Correct
   function changeText() {
     const requiredValue = answers[progression];
-    const enteredValue = textInput.value.trim();    
+    const enteredValue = textInput.value.trim();  
 
     if (requiredValue == enteredValue) {
-      const newText = prompts[++progression];
-      questionElement.textContent = newText;
-      textInput.value = '';
+      myLink.style.display = 'inline';
+
+      changeLink();
+      if (progression == 4) {
+        questionElement.textContent = "YOU HAVE SUCCEEDED! THANKS FOR PLAYING!";
+        textInput.value = '';
+      } else {
+        const newText = prompts[++progression];
+        questionElement.textContent = newText;
+        textInput.value = '';
+      }
+
       changeImage();
+
+    } else if (progression == 4) {
+      questionElement.textContent = "BOOOOOOOOM! YOU LOSE!!!!!!"
     }
   }
 
@@ -44,6 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
       bombImg.src = oldSrc;
     }, 1500)
   };
+
+  function changeLink() {
+      myLink.href = links[progression];
+  }
 });
 
 

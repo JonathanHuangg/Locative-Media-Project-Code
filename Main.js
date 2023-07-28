@@ -14,9 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
   //3 Dead shayne
   "Which group has the best website?",
    "Who is Nitsche's favorite student?", 
-    "Happy Birthday Riley!"]; //4
+    "Who's 81st Birthday is it today?",
+    "Rileyyyyyyyyyyyyyyy!"
+    ]; //4
   //1  2   4
-  let answers = ["This one", "This one", "Jonathan"];
+  let answers = ["This one", "This one", "Jonathan", "Riley"];
   let progression = 0 //Will increment as events progress
 
 
